@@ -132,12 +132,18 @@
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="Domain\Paciente.cpp" />
+    <ClCompile Include="Infrastructure\Log\Log.cpp" />
     <ClCompile Include="Repository\PacienteRepository.cpp" />
+    <ClCompile Include="Services\PacienteService.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Domain\Paciente.h" />
     <ClInclude Include="Domain\Pressao.h" />
+    <ClInclude Include="Domain\StatusPaciente.h" />
+    <ClInclude Include="Infrastructure\Log\Log.h" />
     <ClInclude Include="Repository\PacienteRepository.h" />
+    <ClInclude Include="Services\PacienteService.h" />
+    <ClInclude Include="StatusPaciente.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
