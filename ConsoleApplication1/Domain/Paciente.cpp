@@ -1,8 +1,12 @@
 #include "Paciente.h"
 #include <iostream>
 
-int Paciente::getId() {
+int Paciente::getId() const {
     return id;
+}
+
+StatusPaciente Paciente::getStatus() const {
+    return status;
 }
 
 Paciente::Paciente(int id, std::string nome, int batimento, double oxigenacao, double temperatura, Pressao pressao) {
@@ -12,6 +16,7 @@ Paciente::Paciente(int id, std::string nome, int batimento, double oxigenacao, d
     this->oxigenacao = oxigenacao;
     this->temperatura = temperatura;
     this->pressao = pressao;
+    this->status = StatusPaciente::Internado;
 }
 
 void Paciente::mostrarDados() {

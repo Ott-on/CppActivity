@@ -127,15 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication1.cpp" />
-    <ClCompile Include="Paciente.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Paciente.h" />
-    <ClInclude Include="Pressao.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="ConsoleApplication1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="Domain\Paciente.cpp" />
+    <ClCompile Include="Repository\PacienteRepository.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Domain\Paciente.h" />
+    <ClInclude Include="Domain\Pressao.h" />
+    <ClInclude Include="Repository\PacienteRepository.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

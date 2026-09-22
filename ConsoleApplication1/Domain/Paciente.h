@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Pressao.h"
+#include "StatusPaciente.h"
 
 class Paciente
 {
@@ -11,6 +12,7 @@ private:
 	double oxigenacao;
 	double temperatura;
 	Pressao pressao;
+	StatusPaciente status;
 
 public:
 	Paciente(
@@ -21,7 +23,8 @@ public:
 		double temperatura,
 		Pressao pressao
 	);
-	int getId();
+	int getId() const;
+	StatusPaciente getStatus() const;
 	void atualizarSinaisVitais(int batimento, double oxigenacao, double temperatura, Pressao pressao);
 	void mostrarDados();
 };
